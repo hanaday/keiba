@@ -1,0 +1,71 @@
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>71d4598e-6d2a-4ed9-a150-08bea75c6cb1</ProjectGuid>
+    <ProjectHome>.</ProjectHome>
+    <StartupFile>keiba.py</StartupFile>
+    <SearchPath>
+    </SearchPath>
+    <WorkingDirectory>.</WorkingDirectory>
+    <OutputPath>.</OutputPath>
+    <Name>keiba</Name>
+    <RootNamespace>keiba</RootNamespace>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <DebugSymbols>true</DebugSymbols>
+    <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <DebugSymbols>true</DebugSymbols>
+    <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="accuracy.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="connect.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="cul_power.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="keiba.py" />
+    <Compile Include="load.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="model.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="name.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="power.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="predict.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="scr_race.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="train.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="trans.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="trans_pred.py">
+      <SubType>Code</SubType>
+    </Compile>
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.targets" />
+  <!-- Uncomment the CoreCompile target to enable the Build command in
+       Visual Studio and specify your pre- and post-build commands in
+       the BeforeBuild and AfterBuild targets below. -->
+  <!--<Target Name="CoreCompile" />-->
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+</Project>

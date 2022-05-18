@@ -1,0 +1,14 @@
+train cfg/data.data cfg/cfg.cfg cfg/mdl.mdl
+
+eval cfg/data.data cfg/cfg.cfg cfg/mdl.mdl
+
+predict cfg/data.data cfg/cfg.cfg cfg/mdl.mdl
+
+
+
+#Detect
+#image
+C:/Users/OHTA Lab/Desktop/gazou/test_aveLight/0 (1).jpg
+
+#directory
+C:/Users/OHTA Lab/Desktop/gazou/test_aveLight/

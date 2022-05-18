@@ -1,0 +1,2 @@
+#model =  "./model/TResNet/3000.pkl"
+model =  "./model/K2Net/1540.pkl"
